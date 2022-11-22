@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+:root{
+    --leading: 2em;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    height: 1500px;
+}
+
+.navbar {
+    /*background-color: #2d2d2d;*/
+    background-color: white;
+    overflow: hidden;
+    padding: 1em 3em 1em 2em;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+}
+
+.navbar .icon {
+    display:none;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding-right: 3em;
+    text-decoration: none;
+    color: #2d2d2d;
+}
+
+#navbar li {
+    display: inline;
+}
+
+.m{
+    margin-top: 4em;
+}
+
+.pic-of-me {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    padding: 5em 0 5em;
+    width: 20%;
+}
+
+#navbar li a {
+    display: block;
+    padding-left: 4em;
+    float: right;
+}
+
+#navbar {
+    text-decoration: none;
+    overflow: visible;
+    position: sticky;
+    top:0;
+}
+
+.bg-one {
+    overflow: hidden;
+    padding: 5em 0 5em;
+    background-image: url('../img/cover-image\ \(5\).png');
+    background-position: center;
+    height: 50%;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.bg-two {
+    padding: 5em 0 5em;
+    background: #2d2d2d url('../img/cover-image\ \(1\).png');
+    background-position: center;
+    height: 50%;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    margin-left:auto;
+    margin-right:auto;
+    padding: 1em;
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position:relative;}
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top:0;
+    }
+    .navbar.responsive a{
+        float:none;
+        display: block;
+        text-align: left;
+    }
+}
