@@ -43,7 +43,7 @@ body{
 
 #toRight a {
     margin-left: 2em;
-    
+
 }
 
 .navbar a {
@@ -93,6 +93,28 @@ body{
     width: 50%;
     border-radius: 10px;
 }
+
+.alert {
+    padding: 20px;
+    background-color: red;
+    color: white;
+    margin-bottom: 15px;
+  }
+
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
 
 
 @media screen and (max-width: 650px) {
