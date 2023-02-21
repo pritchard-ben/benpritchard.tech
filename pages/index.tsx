@@ -10,57 +10,47 @@ export default function Home() {
     <>
       <Head>
         <title>benpritchard.tech</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="img/logo.png" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+          charSet="UTF-8"
+        />
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}>
-          <div>
-            <a></a>
+        <div id="nav-bar" className={styles.navbar}>
+          <a href="#" id="name">
+            Ben Pritchard
+          </a>
+          <span id="toRight">
+            <a href="####">About Me</a>
+            <a href="###">Education</a>
+            <a href="##">Contact</a>
+          </span>
+          <a href="javascript:void(0);" className="icon">
+            <i className="fa fa-bars"></i>
+          </a>
+        </div>
+        <section className="main">
+          <div className="bg-one">
+            <img
+              className="pic-of-me"
+              src="img/profilepic.png"
+              alt="Picture of me"
+            ></img>
           </div>
-        </div>
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
 
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-        </div>
+          <div className="bg-two">
+            <div className="container">
+              <h2>About Me</h2>
+              <p>
+                I am a Computer Science Student at Loughborough university with
+                experience using Python, HTML, CSS, JavaScript, PHP, Java, C#,
+                Haskell, Bash and more.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
